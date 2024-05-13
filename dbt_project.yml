@@ -54,11 +54,11 @@ models:
       +materialized: table
       file_format: delta
       ml:
-        +cluster_id: "{{ env_var('DBT_DATABRICKS_CLUSTER_ID') }}"
+        +cluster_id: 0509-184944-wwz216b9 #"{{ env_var('DBT_DATABRICKS_CLUSTER_ID') }}"
         +submission_method: all_purpose_cluster
 
         # Disabled until https://github.com/databricks/dbt-databricks/issues/232 is resolved
-        +enabled: false
+      #  +enabled: false
       airbnb:
         +enabled: false
 vars:
